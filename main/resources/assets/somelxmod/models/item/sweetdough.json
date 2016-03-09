@@ -1,7 +1,7 @@
 {
     "parent": "somelxmod:builtin/generated",
     "textures": {
-        "layer0": "somelxmod:items/sweetDough"
+        "layer0": "somelxmod:items/sweetdough"
     },
     "display": {
         "thirdperson": {

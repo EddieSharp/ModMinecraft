@@ -5,6 +5,7 @@ import block.ModBlocks;
 import item.Dough;
 import item.Flour;
 import item.Prueba;
+import item.SweetDough;
 
 public class ItemLoader {
 
@@ -16,6 +17,7 @@ public class ItemLoader {
 		Flour.preInit();
 		Dough.preInit();
 		Bloque.preInit();
+		SweetDough.preInit();
     }
 
 
@@ -26,6 +28,7 @@ public class ItemLoader {
         Flour.init();
         Dough.init();
         Bloque.init();
+        SweetDough.init();
     }
 
 
