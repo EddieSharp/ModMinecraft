@@ -4,6 +4,7 @@ import block.Bloque;
 import block.ModBlocks;
 import item.Dough;
 import item.Flour;
+import item.Navaja;
 import item.Prueba;
 import item.SweetDough;
 
@@ -18,6 +19,7 @@ public class ItemLoader {
 		Dough.preInit();
 		Bloque.preInit();
 		SweetDough.preInit();
+		Navaja.preInit();
     }
 
 
@@ -29,6 +31,7 @@ public class ItemLoader {
         Dough.init();
         Bloque.init();
         SweetDough.init();
+        Navaja.init();
     }
 
 

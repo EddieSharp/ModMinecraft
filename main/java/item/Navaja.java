@@ -27,8 +27,9 @@ public class Navaja extends ItemSword{
 		
 		itemObj = new Navaja();
 		itemObj.setUnlocalizedName(name);
-		itemObj.setCreativeTab(CreativeTabs.tabFood);
+		itemObj.setCreativeTab(CreativeTabs.tabCombat);
 		GameRegistry.registerItem(itemObj, name);	
+		
 	}
 
 	
