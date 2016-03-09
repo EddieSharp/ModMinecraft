@@ -46,7 +46,8 @@ public class Bloque extends Block {
 		bloque.dropBlockAsItem(worldIn, pos, state, 2);
 	}
 	
-	@Override
+	
+	
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ){
 		
 		playerIn.addChatComponentMessage(new ChatComponentText("Ey"));
