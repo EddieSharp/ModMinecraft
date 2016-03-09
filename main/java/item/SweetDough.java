@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class SweetDough extends ItemFood {
 
 	private static Item sweetDough;
-	private static String name = "sweetdough";
+	private static String name = "sweetDough";
 	
 	static int amount = 1;
 	static float saturation = 1.0f;
