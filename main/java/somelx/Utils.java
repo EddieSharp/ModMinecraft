@@ -12,7 +12,6 @@ public class Utils {
 
 	public static void removeRecipe(Item i){
 		
-		@SuppressWarnings("unchecked")
 		List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();
 		
     	Iterator<IRecipe> Leash = recipes.iterator();

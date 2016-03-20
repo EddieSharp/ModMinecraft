@@ -2,12 +2,11 @@ package somelx;
 
 import block.Bloque;
 import block.ModBlocks;
-import item.Dough;
-import item.DoughOptimizado;
-import item.Flour;
 import item.Navaja;
 import item.Prueba;
-import item.SweetDough;
+import item.food.Dough;
+import item.food.Flour;
+import item.food.SweetDough;
 
 public class ItemLoader {
 

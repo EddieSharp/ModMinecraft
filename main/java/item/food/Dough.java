@@ -1,4 +1,4 @@
-package item;
+package item.food;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -8,45 +8,41 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class SweetDough extends ItemFood {
+public class Dough extends ItemFood{
 
-	private static Item sweetDough;
-	private static String name = "sweetDough";
+	private static Item dough;
+	private static String name = "dough";
 	
 	static int amount = 1;
 	static float saturation = 1.0f;
 	static boolean isWolfFood = false;
 	
-	
-	
-	public static void preInit(){
-		sweetDough = new SweetDough();
-		//sweetDough.setUnlocalizedName(name);
-		//sweetDough = this;
-		sweetDough.setCreativeTab(CreativeTabs.tabFood);
-		GameRegistry.registerItem(sweetDough, name);
-		
-		
-	}
-	
-	public static void init(){
-		
-		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-		ModelResourceLocation mrl = new ModelResourceLocation("somelxmod:" + name, "inventory");
-		renderItem.getItemModelMesher().register(sweetDough, 0, mrl);
-		
-		
-	}
-	
-	private SweetDough() {
+	private Dough() {
         super(amount, saturation, isWolfFood);
         this.setUnlocalizedName(name);
     }
 	
-	public static Item getInstance(){
+	
+	public static void preInit() {
 		
-		return sweetDough;
+		dough = new Dough();
+		dough.setUnlocalizedName(name);
+		dough.setCreativeTab(CreativeTabs.tabFood);
+		GameRegistry.registerItem(dough, name);	
+	}
+
+	
+	public static void init() {
+		
+		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+		ModelResourceLocation mrl = new ModelResourceLocation("somelxmod:" + name, "inventory");
+		renderItem.getItemModelMesher().register(dough, 0, mrl);
+		
 	}
 	
-	
+	public static Item getInstance(){
+		
+		return dough;
+	}
+
 }

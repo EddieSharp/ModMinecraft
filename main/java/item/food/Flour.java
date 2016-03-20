@@ -1,4 +1,4 @@
-package item;
+package item.food;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
