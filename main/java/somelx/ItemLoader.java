@@ -3,6 +3,7 @@ package somelx;
 import block.Bloque;
 import block.ModBlocks;
 import item.Dough;
+import item.DoughOptimizado;
 import item.Flour;
 import item.Navaja;
 import item.Prueba;
