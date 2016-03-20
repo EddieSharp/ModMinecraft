@@ -3,6 +3,7 @@ package somelx;
 import net.minecraft.init.Items;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -17,8 +18,13 @@ public class SomelxMod {
     public static final String VERSION = "1.0";
     public static final String MODNAME = "Somelx's mod";
     
+    @Instance(MODID)
+    public static SomelxMod instance;
+    
     @SidedProxy(clientSide="somelx.ClientProxy", serverSide="somelx.ServerProxy")
     public static CommonProxy proxy;
+    
+    
     
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
