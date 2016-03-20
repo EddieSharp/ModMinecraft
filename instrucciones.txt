@@ -4,3 +4,15 @@ estando en el directorio
 "git add ." añades los archivos que vas a subir
 "git commit -m "mensaje" añades el mensaje a la subida
 "git push" subes todos los cambios
+
+
+
+INSTRUCCIONES PARA PREPARAR EL ENTORNO DE TRABAJO:
+
+1. Descargar el código de forge.
+2. Descomprimirlo.
+3. Mover la carpeta resultante al workspace.
+4. Abrir un terminal y movernos hasta tal carpeta.
+5. Ejecutar “./gradlew eclipse” o “gradlew.bat eclipse” para windows.
+6. Ejecutar “./gradlew setupDecompWorkspace” o “gradlew.bat setupDecompWorkspace” para windows.
+7. Copiar src.
