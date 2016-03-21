@@ -71,7 +71,7 @@ public class Bloque extends Block {
 	        }
 	        else
 	        {
-	        	ITextComponent t = new TextComponentString("hola");
+	        	ITextComponent t = new TextComponentString(playerIn.getName());
 	            playerIn.addChatComponentMessage(t);
 	            //playerIn.openGui(SomelxMod.instance, modGuiId, worldIn, hitX, hitY, hitZ);
 	            //IMerchant im = new IMerchant();
